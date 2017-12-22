@@ -1,0 +1,137 @@
+
+@media screen and (max-width: 767px){
+    .masonry[data-columns]::before{
+        content: '3 .col-xs-4';
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .masonry[data-columns]::before{
+        content: '3 .col-xs-4'
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    .masonry[data-columns]::before{
+        content: '4 .col-xs-3'
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .masonry[data-columns]::before{
+        content: '6 .col-xs-2'
+    }
+}
+
+
+.carousel-indicators {
+  bottom: 30px;
+  margin-bottom: 0;
+}
+.carousel-indicators li {
+  background-color: rgba(255, 255, 255, 0.4);
+  border: none;
+  width: 11px;
+  height: 11px;
+  margin: 0;
+  margin-right: 5px;
+}
+.carousel-indicators li.active {
+  background-color: #40babd;
+  width: 11px;
+  height: 11px;
+  margin: 0;
+  margin-right: 5px;
+}
+/* ======= Hero Section ======= */
+.hero-section {
+  min-height: 560px;
+  background: #494d55;
+  position: relative;
+}
+.hero-section .figure-holder-wrapper {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+}
+.hero-section .figure-holder {
+  position: relative;
+  height: 560px;
+}
+.hero-section .figure-holder .figure-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+}
+.hero-carousel {
+  height: 560px;
+  color: #fff;
+}
+.hero-carousel .carousel-inner .item {
+  height: 560px;
+  background-position: center center;
+}
+.hero-carousel .carousel-inner .item-1 {
+  background-image: url('../img/black/img1.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.hero-carousel .carousel-inner .item-2 {
+  background-image: url('../img/black/img2.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.hero-carousel .carousel-inner .item-3 {
+  background-image: url('../img/black/img3.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.hero-carousel .carousel-inner .heading {
+  font-size: 30px;
+  line-height: 1.4;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.hero-carousel .carousel-inner .intro {
+  font-size: 18px;
+}
+.hero-carousel .carousel-inner .intro + .btn {
+  margin-top: 15px;
+}
+
+/* ---- grid ---- */
+
+.grid {
+  max-width: 1200px;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- grid-item ---- */
+
+.grid-item {
+  font-size: 14px;
+  width: 200px;
+  height: 275px;/*265*/
+  padding: 5px;
+  float: left;
+  background: rgba(100, 100, 100, 0.5);
+  border: 1px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.5);
+  border-radius: 5px;
+}
